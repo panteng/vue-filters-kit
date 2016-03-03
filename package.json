@@ -12,7 +12,7 @@
   "author": "Chris Pan <panteng@outlook.com> (http://panteng.me)",
   "license": "MIT",
   "dependencies": {
-    "echarts": "^3.1.2",
+    "moment": "^2.11.2",
     "vue": "^1.0.17",
     "vue-router": "^0.7.11"
   },
