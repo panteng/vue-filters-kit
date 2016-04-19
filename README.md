@@ -1,4 +1,4 @@
-# vue-filters-kit
+# Vue-Filters-Kit
 
 A bunch of useful custom filters for Vue.js apps.
 
@@ -96,6 +96,8 @@ By default, `[digit]` is '2'.
 Timestamp Formatter depends on [Moment.js](http://momentjs.com/). Make sure you have installed Moment.js via NPM.
 
 `{{ rawValue | timestampFormatter [format] }}`
+
+`rawValue` is a timestamp in mileseconds.
 
 `[format]` is the format of the output time string.
 
