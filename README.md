@@ -14,10 +14,10 @@ This demo uses Bootstrap.css for styling. But you should know that no stylesheet
 
 For now, this project contains four custom vue filters.
 
-1. Boolean Formatter - converts boolean values into human-readable texts, eg: true-->YES, 0-->Disabled.
-2. Byte Formatter - converts bytes to kilobytes or megabytes or gigabytes or terabytes, eg: 1000000-->976.56K.
-3. Percentage Formatter - converts numbers into percentage, eg: 0.1567-->15.67%.
-4. Timestamp Formatter - converts timestamps into human-readable time, eg: 1456989887000-->Thursday, March 3rd, 2016
+1. [Boolean Formatter](#Boolean Formatter) - converts boolean values into human-readable texts, eg: true-->YES, 0-->Disabled.
+2. [Byte Formatter](#Byte Formatter) - converts bytes to kilobytes or megabytes or gigabytes or terabytes, eg: 1000000-->976.56K.
+3. [Percentage Formatter](#Percentage Formatter) - converts numbers into percentage, eg: 0.1567-->15.67%.
+4. [Timestamp Formatter](#Timestamp Formatter) - converts timestamps into human-readable time, eg: 1456989887000-->Thursday, March 3rd, 2016
 
 ## Getting Started
 

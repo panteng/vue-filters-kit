@@ -28,6 +28,17 @@
 </div>
 
 <div class="panel panel-primary">
+    <div class="panel-heading">Byte Formatter</div>
+    <div class="panel-body">
+        <div class="form-group">
+            <label for="inputSize">Input a size (unit: byte)</label>
+            <input type="text" class="form-control" id="inputSize" placeholder="eg. 1000000" v-model="size">
+        </div>
+        <p>Result: <mark>{{ size | byteFormatter }}</mark></p>
+    </div>
+</div>
+
+<div class="panel panel-primary">
     <div class="panel-heading">Percentage Formatter</div>
     <div class="panel-body">
         <div class="form-group">
@@ -37,17 +48,6 @@
         <p>Result: <mark>{{ decimal | percentageFormatter }}</mark> /
             <mark>{{ decimal | percentageFormatter '0' }}</mark> /
             <mark>{{ decimal | percentageFormatter '3' }}</mark></p>
-    </div>
-</div>
-
-<div class="panel panel-primary">
-    <div class="panel-heading">Byte Formatter</div>
-    <div class="panel-body">
-        <div class="form-group">
-            <label for="inputSize">Input a size (unit: byte)</label>
-            <input type="text" class="form-control" id="inputSize" placeholder="eg. 1000000" v-model="size">
-        </div>
-        <p>Result: <mark>{{ size | byteFormatter }}</mark></p>
     </div>
 </div>
 
