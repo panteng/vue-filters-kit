@@ -41,27 +41,27 @@
 </div>
 
 <div class="panel panel-primary">
-    <div class="panel-heading">Size Formatter</div>
+    <div class="panel-heading">Byte Formatter</div>
     <div class="panel-body">
         <div class="form-group">
             <label for="inputSize">Input a size (unit: byte)</label>
             <input type="text" class="form-control" id="inputSize" placeholder="eg. 1000000" v-model="size">
         </div>
-        <p>Result: <mark>{{ size | sizeFormatter }}</mark></p>
+        <p>Result: <mark>{{ size | byteFormatter }}</mark></p>
     </div>
 </div>
 
 <div class="panel panel-primary">
-    <div class="panel-heading">Time Formatter</div>
+    <div class="panel-heading">Timestamp Formatter</div>
     <div class="panel-body">
         <div class="form-group">
             <label for="inputTimestamp">Input a timestamp (in milliseconds)</label>
             <input type="text" class="form-control" id="inputTimestamp" placeholder="eg. 1456971747000"
                    v-model="timestamp">
         </div>
-        <p>Result: <mark>{{ timestamp | timeFormatter }}</mark> /
-            <mark>{{ timestamp | timeFormatter 'YYYY年MM月DD日 HH时mm分ss秒' }}</mark> /
-            <mark>{{ timestamp | timeFormatter 'dddd, MMMM Do, YYYY' }}</mark> /
-            <mark>{{ timestamp | timeFormatter 'h:mm A' }}</mark></p>
+        <p>Result: <mark>{{ timestamp | timestampFormatter }}</mark> /
+            <mark>{{ timestamp | timestampFormatter 'YYYY年MM月DD日 HH时mm分ss秒' }}</mark> /
+            <mark>{{ timestamp | timestampFormatter 'dddd, MMMM Do, YYYY' }}</mark> /
+            <mark>{{ timestamp | timestampFormatter 'h:mm A' }}</mark></p>
     </div>
 </div>

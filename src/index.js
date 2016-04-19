@@ -8,8 +8,8 @@ Vue.config.debug = true;
 // register filters
 Vue.filter('booleanFormatter', require('./filters/booleanFormatter'));
 Vue.filter('percentageFormatter', require('./filters/percentageFormatter'));
-Vue.filter('sizeFormatter', require('./filters/sizeFormatter'));
-Vue.filter('timeFormatter', require('./filters/timeFormatter'));
+Vue.filter('byteFormatter', require('./filters/byteFormatter'));
+Vue.filter('timestampFormatter', require('./filters/timestampFormatter'));
 
 // register views
 Vue.component('v-demos', require('./views/demos'));
