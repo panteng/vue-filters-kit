@@ -1,13 +1,13 @@
-module.exports = function (boolean, trueLabel, falseLabel) {
+module.exports = function (boolean, trueText, falseText) {
     var result;
 
-    trueLabel = trueLabel || 'Yes';
-    falseLabel = falseLabel || 'No';
+    trueText = trueText || 'Yes';
+    falseText = falseText || 'No';
 
     if (boolean === null || boolean === undefined || boolean === '') {
         result = '-';
     } else {
-        result = boolean ? trueLabel : falseLabel;
+        result = boolean ? trueText : falseText;
     }
 
     return result;
