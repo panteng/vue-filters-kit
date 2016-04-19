@@ -97,7 +97,7 @@ Timestamp Formatter depends on [Moment.js](http://momentjs.com/). Make sure you 
 
 `{{ rawValue | timestampFormatter [format] }}`
 
-`rawValue` is a timestamp in mileseconds.
+`rawValue` is a timestamp in milliseconds.
 
 `[format]` is the format of the output time string.
 
