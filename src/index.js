@@ -6,10 +6,10 @@ Vue.use(VueRouter);
 Vue.config.debug = true;
 
 // register filters
-Vue.filter('booleanFormatter', require('./filters/booleanFormatter'));
-Vue.filter('percentageFormatter', require('./filters/percentageFormatter'));
-Vue.filter('byteFormatter', require('./filters/byteFormatter'));
-Vue.filter('timestampFormatter', require('./filters/timestampFormatter'));
+Vue.filter('booleanFormat', require('./filters/booleanFormatter'));
+Vue.filter('percentageFormat', require('./filters/percentageFormatter'));
+Vue.filter('byteFormat', require('./filters/byteFormatter'));
+Vue.filter('timestampFormat', require('./filters/timestampFormatter'));
 
 // register views
 Vue.component('v-demos', require('./views/demos'));

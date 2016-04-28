@@ -19,10 +19,10 @@
                 </button>
             </div>
         </div>
-        <p>Result: <mark>{{ boolean | booleanFormatter }}</mark> /
-            <mark>{{ boolean | booleanFormatter '是' '否' }}</mark> /
-            <mark>{{ boolean | booleanFormatter 'ON' 'OFF' }}</mark> /
-            <mark>{{ boolean | booleanFormatter '在线' '离线' }}</mark>
+        <p>Result: <mark>{{ boolean | booleanFormat }}</mark> /
+            <mark>{{ boolean | booleanFormat '是' '否' }}</mark> /
+            <mark>{{ boolean | booleanFormat 'ON' 'OFF' }}</mark> /
+            <mark>{{ boolean | booleanFormat '在线' '离线' }}</mark>
         </p>
     </div>
 </div>
@@ -34,7 +34,7 @@
             <label for="inputSize">Input a size (unit: byte)</label>
             <input type="text" class="form-control" id="inputSize" placeholder="eg. 1000000" v-model="size">
         </div>
-        <p>Result: <mark>{{ size | byteFormatter }}</mark></p>
+        <p>Result: <mark>{{ size | byteFormat }}</mark></p>
     </div>
 </div>
 
@@ -45,9 +45,9 @@
             <label for="inputPercentage">Input a decimal (between 0 and 1)</label>
             <input type="text" class="form-control" id="inputPercentage" placeholder="eg. 0.153" v-model="decimal">
         </div>
-        <p>Result: <mark>{{ decimal | percentageFormatter }}</mark> /
-            <mark>{{ decimal | percentageFormatter '0' }}</mark> /
-            <mark>{{ decimal | percentageFormatter '3' }}</mark></p>
+        <p>Result: <mark>{{ decimal | percentageFormat }}</mark> /
+            <mark>{{ decimal | percentageFormat '0' }}</mark> /
+            <mark>{{ decimal | percentageFormat '3' }}</mark></p>
     </div>
 </div>
 
@@ -60,8 +60,8 @@
                    v-model="timestamp">
         </div>
         <p>Result: <mark>{{ timestamp | timestampFormatter }}</mark> /
-            <mark>{{ timestamp | timestampFormatter 'YYYY年MM月DD日 HH时mm分ss秒' }}</mark> /
-            <mark>{{ timestamp | timestampFormatter 'dddd, MMMM Do, YYYY' }}</mark> /
-            <mark>{{ timestamp | timestampFormatter 'h:mm A' }}</mark></p>
+            <mark>{{ timestamp | timestampFormat 'YYYY年MM月DD日 HH时mm分ss秒' }}</mark> /
+            <mark>{{ timestamp | timestampFormat 'dddd, MMMM Do, YYYY' }}</mark> /
+            <mark>{{ timestamp | timestampFormat 'h:mm A' }}</mark></p>
     </div>
 </div>
