@@ -30,16 +30,16 @@ For now, this project contains four custom vue filters.
     
 2. Register these filters in your app. You can register them globally like this:
 
-        Vue.filter('booleanFormatter', require('./filters/booleanFormatter'));
-        Vue.filter('percentageFormatter', require('./filters/percentageFormatter'));
-        Vue.filter('byteFormatter', require('./filters/byteFormatter'));
-        Vue.filter('timestampFormatter', require('./filters/timestampFormatter'));
+        Vue.filter('booleanFormat', require('./filters/booleanFormatter'));
+        Vue.filter('percentageFormat', require('./filters/percentageFormatter'));
+        Vue.filter('byteFormat', require('./filters/byteFormatter'));
+        Vue.filter('timestampFormat', require('./filters/timestampFormatter'));
         
 ## Usage
 
 #### Boolean Formatter
 
-`{{ rawValue | booleanFormatter [trueText] [falseText] }}`
+`{{ rawValue | booleanFormat [trueText] [falseText] }}`
 
 `[trueText]` is the text that will show if rawValue equals to true.
 
@@ -47,7 +47,7 @@ For now, this project contains four custom vue filters.
 
 For example:
 
-    <span>{{ isActive | booleanFormatter 'Yes' 'No' }}</span>
+    <span>{{ isActive | booleanFormat 'Yes' 'No' }}</span>
     
 If `isActive` equals to true, the rendered html will be:
 
@@ -61,13 +61,13 @@ By default, `[trueText]` is 'Yes' and `[falseText]` is 'No'.
 
 #### Byte Formatter
 
-`{{ rawValue | byteFormatter }}`
+`{{ rawValue | byteFormat }}`
 
 `rawValue` is a number whose unit is byte.
 
 For example:
 
-    <span>{{ size | byteFormatter }}</span>
+    <span>{{ size | byteFormat }}</span>
     
 If `size` equals to 1000000, the rendered html will be:
 
