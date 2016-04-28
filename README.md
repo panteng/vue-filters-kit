@@ -75,14 +75,14 @@ If `size` equals to 1000000, the rendered html will be:
 
 #### Percentage Formatter
 
-`{{ rawValue | percentageFormatter [digit] }}`
+`{{ rawValue | percentageFormat [digit] }}`
 
 `[digit]` is the number of digits to keep after decimal.
 
 For example:
 
-    <span>{{ ratio | percentageFormatter '4' }}</span>
-    <span>{{ ratio | percentageFormatter '2' }}</span>
+    <span>{{ ratio | percentageFormat '4' }}</span>
+    <span>{{ ratio | percentageFormat '2' }}</span>
     
 If `ratio` equals to 0.15666666, the rendered html will be:
 
@@ -95,7 +95,7 @@ By default, `[digit]` is '2'.
 
 Timestamp Formatter depends on [Moment.js](http://momentjs.com/). Make sure you have installed Moment.js via NPM.
 
-`{{ rawValue | timestampFormatter [format] }}`
+`{{ rawValue | timestampFormat [format] }}`
 
 `rawValue` is a timestamp in milliseconds.
 
@@ -103,7 +103,7 @@ Timestamp Formatter depends on [Moment.js](http://momentjs.com/). Make sure you 
 
 For example:
 
-    <span>{{ startTime | timestampFormatter 'YYYY/MM/DD' }}</span>
+    <span>{{ startTime | timestampFormat 'YYYY/MM/DD' }}</span>
     
 If `startTime` equals to 1456989887000, the rendered html will be:
 
