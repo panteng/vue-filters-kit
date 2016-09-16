@@ -21,7 +21,7 @@ For now, this project contains four custom vue filters.
 
 ## Getting Started
 
-1. Put these files in your project folder. Usually under src/filters.
+1. Put these files in your project folder. Usually under ./filters folder.
 
     - booleanFormatter.js
     - byteFormatter.js

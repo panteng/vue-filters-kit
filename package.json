@@ -14,8 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "moment": "^2.11.2",
-    "vue": "^1.0.17",
-    "vue-router": "^0.7.11"
+    "vue": "^1.0.17"
   },
   "devDependencies": {
     "css-loader": "^0.23.1",
