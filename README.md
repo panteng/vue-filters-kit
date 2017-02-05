@@ -1,6 +1,6 @@
 # Vue-Filters-Kit
 
-A bunch of useful custom filters for Vue.js apps.
+A bunch of useful custom filters for Vue.js(v1.x.x) apps.
 
 ![Screenshot](https://raw.githubusercontent.com/panteng/vue-filters-kit/master/screenshot.jpg)
 
