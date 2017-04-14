@@ -14,12 +14,12 @@
 
 	// app setup
 	var App = new Vue({
-	    el: '#app',
-	    data: {
-	            boolean: 1,
-	            decimal: 0.153333,
-	            size: 1000000,
-	            timestamp: 1456989887000
-	    }
+		el: '#app',
+		data: {
+			boolean: 1,
+			decimal: 0.153333,
+			size: 1000000,
+			timestamp: 1456989887000
+		}
 	});
 })();
