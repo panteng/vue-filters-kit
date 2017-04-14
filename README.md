@@ -28,18 +28,24 @@ For now, this project contains four custom vue filters.
     - percentageFormatter.js
     - timestampFormatter.js
     
-2. Register these filters in your app. You can register them globally like this:
+2. Register these filters in your app:
 
-        Vue.filter('booleanFormat', require('./filters/booleanFormatter'));
-        Vue.filter('percentageFormat', require('./filters/percentageFormatter'));
-        Vue.filter('byteFormat', require('./filters/byteFormatter'));
-        Vue.filter('timestampFormat', require('./filters/timestampFormatter'));
+        const App = new Vue({
+            el: '#app',
+            // register filters
+            filters: {
+                booleanFormat: require('./filters/booleanFormatter'),
+                percentageFormat: require('./filters/percentageFormatter'),
+                byteFormat: require('./filters/byteFormatter'),
+                timestampFormat: require('./filters/timestampFormatter')
+            }
+        });
         
 ## Usage
 
 #### Boolean Formatter
 
-`{{ rawValue | booleanFormat [trueText] [falseText] }}`
+`{{ rawValue | booleanFormat([trueText], [falseText]) }}`
 
 `[trueText]` is the text that will show if rawValue equals to true.
 
@@ -47,7 +53,7 @@ For now, this project contains four custom vue filters.
 
 For example:
 
-    <span>{{ isActive | booleanFormat 'Yes' 'No' }}</span>
+    <span>{{ isActive | booleanFormat('Yes', 'No') }}</span>
     
 If `isActive` equals to true, the rendered html will be:
 
@@ -75,27 +81,27 @@ If `size` equals to 1000000, the rendered html will be:
 
 #### Percentage Formatter
 
-`{{ rawValue | percentageFormat [digit] }}`
+`{{ rawValue | percentageFormat([digit]) }}`
 
 `[digit]` is the number of digits to keep after decimal.
 
 For example:
 
-    <span>{{ ratio | percentageFormat '4' }}</span>
-    <span>{{ ratio | percentageFormat '2' }}</span>
+    <span>{{ ratio | percentageFormat(4) }}</span>
+    <span>{{ ratio | percentageFormat(2) }}</span>
     
 If `ratio` equals to 0.15666666, the rendered html will be:
 
     <span>15.6667%</span>
     <span>15.67%</span>
 
-By default, `[digit]` is '2'.
+By default, `[digit]` is 2.
 
 #### Timestamp Formatter
 
 Timestamp Formatter depends on [Moment.js](http://momentjs.com/). Make sure you have installed Moment.js via NPM.
 
-`{{ rawValue | timestampFormat [format] }}`
+`{{ rawValue | timestampFormat([format]) }}`
 
 `rawValue` is a timestamp in milliseconds.
 
@@ -103,7 +109,7 @@ Timestamp Formatter depends on [Moment.js](http://momentjs.com/). Make sure you 
 
 For example:
 
-    <span>{{ startTime | timestampFormat 'YYYY/MM/DD' }}</span>
+    <span>{{ startTime | timestampFormat('YYYY/MM/DD') }}</span>
     
 If `startTime` equals to 1456989887000, the rendered html will be:
 

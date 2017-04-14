@@ -1,11 +1,14 @@
+const path = require('path');
+
 module.exports = {
     entry: [
         './main.js'
     ],
     output: {
-        path: './bundles',
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'bundles'),
         publicPath: '/bundles',
-        filename: 'bundle.js'
+        
     },
     module: {
         loaders: [
@@ -16,6 +19,11 @@ module.exports = {
                 test: /\.css$/, loader: "style!css"
             }
         ]
+    },
+    resolve: {
+        alias: {
+            vue: 'vue/dist/vue.js'
+        }
     },
     devServer: {
         contentBase: './'
