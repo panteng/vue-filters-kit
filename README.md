@@ -1,18 +1,18 @@
 # Vue-Filters-Kit
 
-A bunch of useful custom filters for Vue.js apps.
+A collection of useful custom filters for Vue.js apps.
 
 ![Screenshot](https://raw.githubusercontent.com/panteng/vue-filters-kit/master/screenshot.jpg)
 
 ## Demo
 
-[Click Here](http://panteng.me/demos/vue-filters-kit/)
+[Click Here](https://panteng.github.io/vue-filters-kit/)
 
-This demo uses Bootstrap.css for styling. But you should know that no stylesheets are needed for using these filters in your app.
+This demo uses Bootstrap.css for styling. But you should know that no stylesheets are needed for using these filters in your webapps.
 
 ## Filters
 
-For now, this project contains four custom vue filters.
+For now, this project contains 4 custom vue.js filters.
 
 1. [Boolean Formatter](#boolean-formatter) - converts boolean values into human-readable texts, eg: true-->YES, 0-->Disabled.
 2. [Byte Formatter](#byte-formatter) - converts bytes to kilobytes or megabytes or gigabytes or terabytes, eg: 1000000-->976.56K.
@@ -28,7 +28,7 @@ For now, this project contains four custom vue filters.
     - percentageFormatter.js
     - timestampFormatter.js
     
-2. Register these filters in your app:
+2. Register these filters in your vue.js webapp:
 
         const App = new Vue({
             el: '#app',
@@ -54,11 +54,11 @@ For now, this project contains four custom vue filters.
 For example:
 
     <span>{{ isActive | booleanFormat('Yes', 'No') }}</span>
-    
+
 If `isActive` equals to true, the rendered html will be:
 
     <span>Yes</span>
-    
+
 Else if `isActive` equals to false, the result will will be:
 
     <span>No</span>
@@ -74,7 +74,7 @@ By default, `[trueText]` is 'Yes' and `[falseText]` is 'No'.
 For example:
 
     <span>{{ size | byteFormat }}</span>
-    
+
 If `size` equals to 1000000, the rendered html will be:
 
     <span>976.56 K</span>
