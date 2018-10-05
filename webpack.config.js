@@ -1,31 +1,44 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
+    mode: 'development',
     entry: [
         './main.js'
     ],
     output: {
-        filename: 'bundle.js',
         path: path.resolve(__dirname, 'bundles'),
-        publicPath: '/bundles',
-        
+        publicPath: '/bundles/',
+        filename: 'bundle.js'
     },
     module: {
-        loaders: [
+        rules: [
             {
-                test: /\.html$/, loader: "html"
+                test: /\.html$/,
+                use: [
+                    {
+                        loader: "html-loader"
+                    }
+                ]
             },
             {
-                test: /\.css$/, loader: "style!css"
+                test: /\.css$/,
+                use: [
+                    "style-loader",
+                    "css-loader"
+                ]
             }
         ]
     },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ],
     resolve: {
         alias: {
             vue: 'vue/dist/vue.js'
         }
     },
     devServer: {
-        contentBase: './'
+        hot: true
     }
 };
