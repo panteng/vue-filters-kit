@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/panteng/vue-filters-kit.git"
   },
-  "author": "Chris Pan <mail@chrispan.me> (http://chrispan.me)",
+  "author": "Chris Pan <chrispan.pt@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "moment": "^2.11.2",
