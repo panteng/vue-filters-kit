@@ -1,8 +1,6 @@
 # Vue-Filters-Kit
 
-A collection of useful custom filters for Vue.js apps.
-
-![Screenshot](https://raw.githubusercontent.com/panteng/vue-filters-kit/master/screenshot.jpg)
+A collection of useful Vue.js(v2.x.x) custom filters.
 
 ## Demo
 
@@ -12,7 +10,7 @@ This demo uses Bootstrap.css for styling. But you should know that no stylesheet
 
 ## Filters
 
-For now, this project contains 4 custom vue.js filters.
+For now, vue-filters-kit contains 4 custom filters.
 
 1. [Boolean Formatter](#boolean-formatter) - converts boolean values into human-readable texts, eg: true-->YES, 0-->Disabled.
 2. [Byte Formatter](#byte-formatter) - converts bytes to kilobytes or megabytes or gigabytes or terabytes, eg: 1000000-->976.56K.
@@ -27,7 +25,7 @@ For now, this project contains 4 custom vue.js filters.
     - byteFormatter.js
     - percentageFormatter.js
     - timestampFormatter.js
-    
+
 2. Register these filters in your vue.js webapp:
 
         const App = new Vue({
@@ -40,7 +38,7 @@ For now, this project contains 4 custom vue.js filters.
                 timestampFormat: require('./filters/timestampFormatter')
             }
         });
-        
+
 ## Usage
 
 #### Boolean Formatter
@@ -89,7 +87,7 @@ For example:
 
     <span>{{ ratio | percentageFormat(4) }}</span>
     <span>{{ ratio | percentageFormat(2) }}</span>
-    
+
 If `ratio` equals to 0.15666666, the rendered html will be:
 
     <span>15.6667%</span>
@@ -110,11 +108,11 @@ Timestamp Formatter depends on [Moment.js](http://momentjs.com/). Make sure you 
 For example:
 
     <span>{{ startTime | timestampFormat('YYYY/MM/DD') }}</span>
-    
+
 If `startTime` equals to 1456989887000, the rendered html will be:
 
     <span>2016/03/03</span>
-    
+
 By default, `[format]` is 'YYYY-MM-DD HH:mm:ss'. You can see more about `[format]` in [Moment.js Documentation](http://momentjs.com/docs/#/parsing/string-format/).
 
 ## License
