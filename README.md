@@ -1,6 +1,6 @@
 # Vue-Filters-Kit
 
-A collection of useful Vue.js(v2.x.x) custom filters.
+A collection of useful custom filters for Vue.js(v2.x.x) apps.
 
 ## Demo
 
@@ -19,12 +19,9 @@ For now, vue-filters-kit contains 4 custom filters.
 
 ## Getting Started
 
-1. Put these files in your project folder. Usually under ./filters folder.
+1. Install via npm:
 
-    - booleanFormatter.js
-    - byteFormatter.js
-    - percentageFormatter.js
-    - timestampFormatter.js
+        npm install vue-filters-kit --save
 
 2. Register these filters in your vue.js webapp:
 
@@ -32,10 +29,10 @@ For now, vue-filters-kit contains 4 custom filters.
             el: '#app',
             // register filters
             filters: {
-                booleanFormat: require('./filters/booleanFormatter'),
-                percentageFormat: require('./filters/percentageFormatter'),
-                byteFormat: require('./filters/byteFormatter'),
-                timestampFormat: require('./filters/timestampFormatter')
+                booleanFormat: require('vue-filters-kit/filters/booleanFormatter'),
+                percentageFormat: require('vue-filters-kit/filters/percentageFormatter'),
+                byteFormat: require('vue-filters-kit/filters/byteFormatter'),
+                timestampFormat: require('vue-filters-kit/filters/timestampFormatter')
             }
         });
 

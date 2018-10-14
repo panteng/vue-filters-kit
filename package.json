@@ -1,7 +1,7 @@
 {
   "name": "vue-filters-kit",
   "version": "0.2.2",
-  "description": "A collection of useful custom filters for Vue.js webapps.",
+  "description": "A collection of useful custom filters for Vue.js(v2.x.x) apps.",
   "scripts": {
     "dev": "webpack-dev-server",
     "prod": "webpack --mode=production"
@@ -13,8 +13,8 @@
   "author": "Chris Pan <chrispan.pt@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "moment": "^2.22.2",
-    "vue": "^2.5.17"
+    "moment": "^2.x.x",
+    "vue": "^2.x.x"
   },
   "devDependencies": {
     "css-loader": "^1.0.0",
