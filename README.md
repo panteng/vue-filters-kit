@@ -23,7 +23,7 @@ For now, vue-filters-kit contains 4 custom filters.
 
         npm install vue-filters-kit --save
 
-2. Register these filters in your vue.js webapp:
+2. Register these filters in your Vue.js app:
 
         const App = new Vue({
             el: '#app',
